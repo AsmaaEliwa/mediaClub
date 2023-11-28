@@ -13,7 +13,7 @@ struct mediaClubApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ImmagesSwiftUIView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
