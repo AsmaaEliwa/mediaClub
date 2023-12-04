@@ -10,14 +10,14 @@ struct ImmagesSwiftUIView: View {
                        Text("Loading images...")
                    } else {
                        ScrollView {
-//                           LazyVStack {
+                           LazyVStack {
                                ForEach(images, id: \.id) { image in
                                    RemoteImage(urlString: image.urls.small)
                                                                   .aspectRatio(contentMode: .fit)
                                                                   .frame(width: 200, height: 200).padding()
                                    
                                }
-//                           }
+                           }
                        }
                    }
                }

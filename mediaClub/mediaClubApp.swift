@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct mediaClubApp: App {
-    let persistenceController = PersistenceController.shared
+    let persistenceController = DataManger.shared.persistentContainer
 
     var body: some Scene {
         WindowGroup {
-            ImmagesSwiftUIView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            HomeSwiftUIView()
+                .environment(\.managedObjectContext, persistenceController.viewContext)
         }
     }
 }

@@ -9,7 +9,9 @@ import Foundation
  
 class NetworkManger{
     static let shared:NetworkManger = NetworkManger()
-    
+    private init(){
+        
+    }
     
     func ApiRequest(url:String , compilation: @escaping(Bool,Data?)->()){
         guard  let requestUrl = URL(string:url) else {
