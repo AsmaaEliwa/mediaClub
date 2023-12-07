@@ -54,6 +54,28 @@ class APIDataManger{
     }
 
     
+    func searchCollectionOfImages(query: String,page:Int ,completion: @escaping ([CollectionModel?]) -> Void) {
+        let url = "https://api.unsplash.com/search/collections?page=\(page)&query=\(query)&client_id=6VPG5CltZnpFlSU41xc4LY3Wjtsmbq3KCCosN7ivMkQ"
+        
+        let decoder = JSONDecoder()
+        
+        NetworkManger.shared.ApiRequest(url: url) { success, data in
+            if success, let jsonData = data {
+                do {
+                    let result = try decoder.decode(CollectionsResponse.self, from: jsonData)
+                    completion(result.results)
+                } catch {
+                    print(error)
+                    completion([])
+                }
+            } else {
+                completion([])
+            }
+        }
+    }
+    
+    
+    
     
     
    
