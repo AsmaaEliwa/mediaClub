@@ -21,7 +21,7 @@ class NetworkManger{
         request.httpMethod = "GET"
         request.timeoutInterval = 30.0
         request.cachePolicy = .useProtocolCachePolicy
-        
+        request.setValue("Client-ID 6VPG5CltZnpFlSU41xc4LY3Wjtsmbq3KCCosN7ivMkQ", forHTTPHeaderField: "Authorization")
         let task = URLSession.shared.dataTask(with: request ,completionHandler:  {( data, response, error )in
             
             if data != nil {

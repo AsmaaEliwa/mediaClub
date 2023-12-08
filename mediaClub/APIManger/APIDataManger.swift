@@ -108,8 +108,9 @@ class APIDataManger{
             if success, let jsonData = data {
                 
                 do {
-                    let photos = try decoder.decode(PhotoModel.self, from: jsonData)
-                    completion([photos])
+                    let photos = try decoder.decode([PhotoModel].self, from: jsonData)
+                    
+                    completion(photos)
                     
                 } catch {
                     print("Error decoding JSON: \(error)")

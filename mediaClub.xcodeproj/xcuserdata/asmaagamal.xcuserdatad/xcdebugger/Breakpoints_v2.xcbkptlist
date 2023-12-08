@@ -390,7 +390,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EA88B32D-54FE-4CD2-8CDF-442CB0112A85"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaClub/Views/PhotosView.swift"
@@ -721,7 +721,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "08AB4F86-122B-4F03-91D2-E8BEAFABFE27"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaClub/APIManger/APIDataManger.swift"
@@ -769,32 +769,17 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C408475C-0AEF-4D12-B040-9CADDC3025D7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaClub/APIManger/APIDataManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "searchCollectionOfPhotos(url:completion:)"
             landmarkType = "7">
             <Locations>
-               <Location
-                  uuid = "C408475C-0AEF-4D12-B040-9CADDC3025D7 - 958ffd1e6eafe08"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "mediaClub"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "502">
-               </Location>
                <Location
                   uuid = "C408475C-0AEF-4D12-B040-9CADDC3025D7 - 958ffd1e6eafe08"
                   shouldBeEnabled = "Yes"
@@ -810,6 +795,36 @@
                   endingLineNumber = "114"
                   offsetFromSymbolStart = "1035">
                </Location>
+               <Location
+                  uuid = "C408475C-0AEF-4D12-B040-9CADDC3025D7 - 958ffd1e6eaf9d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "1035">
+               </Location>
+               <Location
+                  uuid = "C408475C-0AEF-4D12-B040-9CADDC3025D7 - 958ffd1e6eaf9d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "502">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -817,14 +832,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "980EAFE2-E0C6-4039-B363-8EDD79F9E213"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mediaClub/APIManger/APIDataManger.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "searchCollectionOfPhotos(url:completion:)"
             landmarkType = "7">
             <Locations>
@@ -841,10 +856,10 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "117"
                   endingLineNumber = "117"
-                  offsetFromSymbolStart = "1177">
+                  offsetFromSymbolStart = "1821">
                </Location>
                <Location
-                  uuid = "980EAFE2-E0C6-4039-B363-8EDD79F9E213 - 958ffd1e6eaf995"
+                  uuid = "980EAFE2-E0C6-4039-B363-8EDD79F9E213 - 958ffd1e6eaf974"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -854,9 +869,24 @@
                   urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
                   offsetFromSymbolStart = "1821">
+               </Location>
+               <Location
+                  uuid = "980EAFE2-E0C6-4039-B363-8EDD79F9E213 - 958ffd1e6eaf974"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "1177">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -875,6 +905,148 @@
             endingLineNumber = "94"
             landmarkName = "APIDataManger"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "007A9387-9016-488B-8C99-6A8135000A92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaClub/APIManger/APIDataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "searchCollectionOfPhotos(url:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "007A9387-9016-488B-8C99-6A8135000A92 - 958ffd1e6eafe4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "714">
+               </Location>
+               <Location
+                  uuid = "007A9387-9016-488B-8C99-6A8135000A92 - 958ffd1e6eafe29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "714">
+               </Location>
+               <Location
+                  uuid = "007A9387-9016-488B-8C99-6A8135000A92 - 958ffd1e6eafe29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "459">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8289B2B6-E8D3-43AB-B415-272DCD1B1321"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaClub/APIManger/APIDataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "searchCollectionOfPhotos(url:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8289B2B6-E8D3-43AB-B415-272DCD1B1321 - 2dbfdc81d9fd050f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "98">
+               </Location>
+               <Location
+                  uuid = "8289B2B6-E8D3-43AB-B415-272DCD1B1321 - 958ffd1e6eafece"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "8289B2B6-E8D3-43AB-B415-272DCD1B1321 - 958ffd1e6eafece"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Foundation.Data&gt;) -&gt; () in mediaClub.APIDataManger.searchCollectionOfPhotos(url: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;mediaClub.PhotoModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "mediaClub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/asmaagamal/Desktop/mediaClub/mediaClub/APIManger/APIDataManger.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "202">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1FE149E2-EC11-49FB-A30E-CF48D07B7069"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mediaClub/APIManger/APIDataManger.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "searchCollectionOfPhotos(url:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
