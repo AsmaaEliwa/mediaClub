@@ -7,6 +7,7 @@
 
 import Foundation
 class APIDataManger{
+    @Published var photos: [PhotoModel] = []
     static let shared : APIDataManger = APIDataManger()
     private init(){
         
@@ -61,11 +62,14 @@ class APIDataManger{
         
         NetworkManger.shared.ApiRequest(url: url) { success, data in
             if success, let jsonData = data {
+                
                 do {
                     let result = try decoder.decode(CollectionsResponse.self, from: jsonData)
+                    
                     completion(result.results)
                 } catch {
                     print(error)
+                    
                     completion([])
                 }
             } else {
@@ -74,9 +78,48 @@ class APIDataManger{
         }
     }
     
+//    func searchCollectionOfPhotos(url: String, completion: @escaping ([PhotoModel]?) -> Void) {
+//        NetworkManger.shared.ApiRequest(url: url) { success, data in
+//            if success, let jsonData = data {
+//                
+//                do {
+//                    let decoder = JSONDecoder()
+//                    let result = try decoder.decode([PhotoModel].self, from: jsonData)
+//                    self.photos = result
+//                    
+//                    completion(result)
+//                } catch {
+//                    print("JSON decoding failed: \(error)")
+//                    
+//                    completion(nil)
+//                }
+//            } else {
+//                completion(nil)
+//            }
+//        }
+//    }
+
     
-    
-    
-    
+    func searchCollectionOfPhotos(url : String , completion: @escaping ([PhotoModel]?) -> Void) {
+     
+        let decoder = JSONDecoder()
+
+        NetworkManger.shared.ApiRequest(url: url) { success, data in
+            if success, let jsonData = data {
+                
+                do {
+                    let photos = try decoder.decode(PhotoModel.self, from: jsonData)
+                    completion([photos])
+                    
+                } catch {
+                    print("Error decoding JSON: \(error)")
+                    
+                    completion(nil)
+                }
+            } else {
+                completion(nil)
+            }
+        }
+    }
    
 }

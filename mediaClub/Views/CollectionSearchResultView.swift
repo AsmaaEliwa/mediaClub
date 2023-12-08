@@ -6,35 +6,50 @@
 //
 import SwiftUI
 struct CollectionSearchResultView: View {
-    @ObservedObject var viewModel: SearchViewModel 
+    @ObservedObject var viewModel: SearchViewModel
+    @State private var selectedCollection: CollectionModel? = nil // Track the selected collection
 
     var body: some View {
-        ScrollView {
-            LazyVStack(spacing: 20) {
-                ForEach(viewModel.CollectionsearchResults, id: \.id) { collection in
-                    VStack(alignment: .leading, spacing: 8) {
-                         let coverPhoto = collection.cover_photo
+        NavigationView {
+            ScrollView {
+                LazyVStack(spacing: 20) {
+                    ForEach(viewModel.CollectionsearchResults, id: \.id) { collection in
+                        VStack(alignment: .leading, spacing: 8) {
+                            let coverPhoto = collection.cover_photo
                             RemoteImage(urlString: coverPhoto.urls.regular)
                                 .aspectRatio(contentMode: .fill)
                                 .frame(height: 200)
                                 .cornerRadius(8)
                                 .clipped()
-                        
-                        Text(collection.title)
-                            .font(.headline)
-                        // Other content related to the collection
+                                .onTapGesture {
+                                    // When the image is tapped, set the selected collection
+                                    selectedCollection = collection
+                                }
+                            
+                            Text(collection.title)
+                                .font(.headline)
+                            // Other content related to the collection
+                        }
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(12)
                     }
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(12)
+                }
+                .padding()
+                Button(action: {
+                    viewModel.fetchMoreImages()
+                }) {
+                    Text("More")
                 }
             }
-            .padding()
-            Button(action: {
-                viewModel.fetchMoreImages()
-            }) {
-                Text("More")
+            .navigationTitle("Collections")
+            .sheet(item: $selectedCollection) { selectedCollection in
+                // Navigate to the PhotosView with the selected collection
+                PhotosView(collection: selectedCollection)
             }
         }
     }
 }
+
+
+

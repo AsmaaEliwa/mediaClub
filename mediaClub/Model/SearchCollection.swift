@@ -22,9 +22,16 @@ struct UnsplashPhotoURLs: Codable ,Hashable{
     let thumb: String
  
 }
+struct LinksModel:Codable ,Hashable{
+    let photos:String
+}
+struct UserModel:  Codable, Hashable{
+    let links: LinksModel
+    let id:String
+    let username:String
+}
 
-
-struct CollectionModel: Codable, Hashable {
+struct CollectionModel: Codable, Hashable , Identifiable  {
     static func == (lhs: CollectionModel, rhs: CollectionModel) -> Bool {
         lhs.id == rhs.id
     }
@@ -39,6 +46,7 @@ struct CollectionModel: Codable, Hashable {
     let total_photos: Int
     let share_key: String
     let cover_photo: UnsplashCoverPhoto
+    let user : UserModel
 
 }
 
